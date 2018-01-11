@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		title Contacts
+		meta(name="viewport" content="initial-scale=1.0")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
+		link(rel="stylesheet", href="stylesheets/style.css")
+		script(src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQNg_S_N4P0TIfAZI7biP-WbFvCXj_gV0")
+		script(src="javascripts/map.js")
+	body.content
+		h1 Contacts 
+		a(href="/mailer" class="createContact btn btn-default") Create New Contact
+		div
+			table.table.table-striped.table-bordered
+				thead
+					tr
+						th Name
+						th Address
+						th Phone
+						th Email
+						th Contact By Mail
+						th Contact By Phone
+						th Contact By Email
+				tbody
+					each contact in contactList
+						tr.contact
+							td.name #{contact.name}
+							td.address #{contact.address}
+							td.phone #{contact.phone}
+							td.email #{contact.email}
+							td.contactByMail #{contact.contactByMail}
+							td.contactByPhone #{contact.contactByPhone}
+							td.contactByEmail #{contact.contactByEmail}
+							td.lat.hidden #{contact.latitude}
+							td.long.hidden #{contact.longitude}
+							td.mongoID.hidden #{contact._id}
+			div(id="map", class="col-md-8")

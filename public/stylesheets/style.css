@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#map {
+  margin-top:15px;
+  margin-bottom: 15px;
+	width:100%;
+	height:500px;
+}
+
+.createContact {
+  background-color: lightgreen;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.deleteContact {
+  background-color : lightcoral;
+}

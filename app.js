@@ -7,6 +7,10 @@ var bodyParser = require('body-parser');
 var ex_session = require('express-session');
 var NodeGeocoder = require('node-geocoder');
 
+/*******************************************************************************
+	Author: Austin Fouch
+*******************************************************************************/
+
 var options = {
  provider: 'google',
  // Optional depending on the providers

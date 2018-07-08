@@ -1,15 +1,14 @@
 /*******************************************************************************
 	Author: Austin Fouch
 	Date: 2017-11-15
-		JavaScript file for CMPS 369 project 2.This script creates map using 
-		the Google Maps API to mark and center a map based on user input. The 
-		map is initially centered on The Ramapo College of New Jersey. The 
-		application takes in user input with the address box and, using jQuery,
-		sends an AJAX request via the $.getJSON() function. Based off the the 
-		return object of the call, the map is centered on a specific latitude 
-		and longitude. The user's input is also displayed as a list on the 
-		right side of the map. Each row of the list is clickable, and each 
-		click will center the map on the clicked location.
+        This script creates map using the Google Maps API to mark and center a 
+        map based on user input. The map is initially centered on The Ramapo 
+        College of New Jersey. The application takes in user input with the 
+        address box and, using jQuery,sends an AJAX request via the $.getJSON() 
+        function. Based off the the return object of the call, the map is
+        centered on a specific latitude and longitude. The user's input is also 
+        displayed as a list on the right side of the map. Each row of the list 
+        is clickable, and each click will center the map on the clicked location.
 *******************************************************************************/
 var mapCanvas;
 var zoom = 7;

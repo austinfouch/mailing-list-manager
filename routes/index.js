@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+/*******************************************************************************
+	Author: Austin Fouch
+	Date: 2017-11-15
+*******************************************************************************/
+
 // renders /mailer
 var mailerPage = function(req, res, next) {
   console.log("Mailer...");
